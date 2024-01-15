@@ -1,0 +1,39 @@
+1. Write a Programe to check whether the given number is Prime or not
+
+eg: prime number means----> number should be divisible by 1 and itself
+	5 ---> 1, 5//prime
+	4----> 1, 2, 4// not a prime
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyPractice
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            bool isPrime = true;
+            Console.WriteLine("Enter Positive Number:");
+            num = int.Parse(Console.ReadLine());
+            for (int i = 2; i<= num / 2; i++)
+            {
+                if(num % 2 == 0)
+                {
+                    isPrime = false;
+                    Console.WriteLine("Given Number is not a prime Number");
+                    Console.ReadLine();
+                }
+            }
+            if(isPrime)
+            {
+                Console.WriteLine("given number is a prime number");
+                Console.ReadLine();
+            }
+        }
+    }
+}
