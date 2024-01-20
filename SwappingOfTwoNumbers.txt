@@ -1,0 +1,33 @@
+Write a C sharp program to swap two numbers by using the third variable
+
+eg: a = 20, b = 30
+    result:
+    a = 30, b = 20
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyPractice
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 20;
+            int b = 30;
+            int temp;
+            Console.WriteLine("swapping of two numbers");
+           
+            temp = a;
+            a = b;
+            b = temp;
+            Console.WriteLine("The Value Of A:" + a);
+            Console.WriteLine("The Value of B:" + b);
+            Console.ReadLine();
+        }
+
+    }
+}
