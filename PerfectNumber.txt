@@ -1,0 +1,44 @@
+Write a c# program to calculate weather the given number is perfect number or not?
+
+eg: 6 = 1+2+3 => 6
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyPractice
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+            int sum = 0;
+            Console.WriteLine("Enter the Number:");
+            n = int.Parse(Console.ReadLine());
+            for(int i = 1; i<n; i++)
+            {
+                if(n%i == 0)
+                {
+                   
+                    sum = sum + i;
+                }
+                
+               
+            }
+            if (sum == n)
+            {
+                Console.WriteLine(" It is a perfect number");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine(" It is not a perfect number");
+                Console.ReadLine();
+            }
+        }
+
+    }
+}
