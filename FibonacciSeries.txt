@@ -1,0 +1,32 @@
+Write the Program to calculate Fibonacci series ?
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyPractice
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 0;
+            int b = 1;
+            int sum = 0;
+            Console.WriteLine("Enter the limit:");
+            int limit = int.Parse(Console.ReadLine());
+
+            for(int i = 0; i< limit; i++)
+            {
+                sum = a + b;
+                Console.WriteLine(sum);
+                a = b;
+                b = sum;
+            }
+            Console.ReadLine();
+        }
+
+    }
+}
